@@ -1,0 +1,15 @@
+def total_cost(cart):
+    total_bill = 0
+    for item in cart:
+        total_bill+= item['price']*item['quantity']
+    return total_bill    
+
+
+
+cart = [
+    {'name':'apple', 'price':0.4 , 'quantity':4},
+    {'name':'banana', 'price': 0.7,'quantity':6},
+    {'name':'Orange', 'price': 0.4,'quantity':3},
+]
+
+print(total_cost(cart))
