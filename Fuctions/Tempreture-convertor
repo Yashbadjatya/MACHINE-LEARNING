@@ -1,0 +1,13 @@
+### Tempreture convertor
+
+def Tempreture_convertor(temp,unit):
+    """this function convert tempreture celsius to farehnhiet and vice a verca"""
+    if unit=="C":
+        return temp * 9/5 + 32
+    elif unit=="F":
+        return (temp-32)*5/9
+    else:
+        return None
+
+print(Tempreture_convertor(25,"C")) 
+print(Tempreture_convertor(77,"F"))   
